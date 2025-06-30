@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-md sticky-top shadow-custom" style="height:5rem;">
+  <div class="container-fluid">
+    <a class="navbar-brand text-warning" href="/">
+      <i class="fa-regular fa-compass"></i> Blog-App
+    </a>
+
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto d-flex gap-3">
+        <a class="nav-link" href="/admin">Add Post</a>
+          <% if(!newUser){ %>
+            <a class="nav-link" href="/signup"><b>Sign-Up</b></a>
+            <a class="nav-link" href="/login"><b>Log-In</b></a>
+          <% } %>
+
+       
+         <%  if(newUser){ %>
+          <a class="nav-link" href="/logout">Log Out</a>
+         <% } %>
+        
+      </div>
+    </div>
+  </div>
+</nav>

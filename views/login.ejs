@@ -1,0 +1,25 @@
+<%- layout("/layouts/boilerplate") %>
+
+<div class="d-flex justify-content-center align-items-center min-vh-100 bg-black">
+  <div class="card bg-dark text-light shadow rounded-4 px-5 py-4" style="max-width: 500px; width: 100%;">
+    <h1 class="text-center mb-4 fw-light">Log In to Blog-App</h1>
+
+    <form method="POST" action="/login" novalidate>
+      <div class="mb-4">
+        <label for="username" class="form-label small text-uppercase">Username</label>
+        <input type="text" name="username" id="username" placeholder="Enter username"
+               class="form-control bg-black text-light border-secondary rounded-3 py-3 px-4" required>
+      </div>
+
+      <div class="mb-4">
+        <label for="password" class="form-label small text-uppercase">Password</label>
+        <input type="password" name="password" id="password" placeholder="Enter password"
+               class="form-control bg-black text-light border-secondary rounded-3 py-3 px-4" required>
+      </div>
+
+      <button type="submit" class="btn btn-outline-light w-100 rounded-pill py-3">
+        Log In
+      </button>
+    </form>
+  </div>
+</div>
